@@ -33,7 +33,7 @@
 	DESARROLLO WEB
 	TEMA:  EL JUEGO
 	Elaboró:
-	William Morales // Gilbert Cachaya //Brandon Chamorro
+	Esteban Moya // Gilbert Cachaya //Juan Pablo Sotelo
 	2018-II
 	**************************************************************************************
 	**************************************************************************************
@@ -44,95 +44,14 @@
 	var letpista;
 	// var codigos = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28];
 	// Lista de bestias mitologicas
-var bestiasmitologicas = [
-  "Aguanas",
-  "Ahuitzotl",
-  "Aluxes",
-  "Anemait",
-  "Anfisbena",
-  "Anjanas",
-  "Atlas",
-  "Audihumbla",
-  "Baba Yaga",
-  "Bagan",
-  "Bagual",
-  "Balames",
-  "Banshee",
-  "Basajaun",
-  "Basilísco",
-  "Bennu",
-  "Big Foot",
-  "Bloody Caps",
-  "Bosgosu",
-  "Bure",
-  "Bwciod"
-];
+
 	var alfabeto =['a','b','c','d','e','f','g','h','i','j','k','l','m','n','ñ','o','p','q','r','s','t','u','v','w','x','y','z',' '];
 	var arregloLetras;
 	var arreglocodigos;
 	var arreglocodificado;
 	var codigoElt = document.querySelector("#codigo");
-console.log(codigoElt);
-	var sugerenciasElt = document.getElementById("sugerencias");
-
-
-codigoElt.addEventListener("input", function() {
-  sugerenciasElt.innerHTML = "";
-
-
- // Eliminación de la lista previa de sugerencias
-
-
-	var casos=codigoElt.value.length;
-if (document.getElementById("tiporonda").value==1){
-
-  bestiasmitologicas.forEach(function(codigo) {
 
     
-
-
-
-	
-	
-
-    if (codigo.toLowerCase().indexOf(codigoElt.value) === 0 || (codigo.toLowerCase().lastIndexOf(codigoElt.value.substring(casos-1, casos))===casos-1 && codigo.length===casos)) {
-      var sugerenciaElt = document.createElement("div");
-      sugerenciaElt.classList.add("sugerencia");
-      sugerenciaElt.textContent = codigo;
-
-
-
-      // Gestiona el clic sobre un sugerencia
-
-
-
-      sugerenciaElt.addEventListener("click", function (e) {
-
-
-
-
-        // Reemplaza el valor introducido por una sugestión
-        codigoElt.value = e.target.textContent;
-
-
-
-
-        // Vacía la lista de sugerencias
-
-
-
-
-        sugerenciasElt.innerHTML = "";
-      }); // terminacion de listener sugerenciaElt o div sugerencia.
-      sugerenciasElt.appendChild(sugerenciaElt);
-    } // terminacion del if de recorrido for each 
-  }); // terminacion de recorrido foreach de arreglo bestiasmitologicas.
-}
-else if (document.getElementById("tiporonda").value==2){
-}
-else {
-}
-}); // terminacion de listener de codigoElt o textarea codigo.
 
 //Funciones de la página
 
