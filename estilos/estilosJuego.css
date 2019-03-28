@@ -42,6 +42,7 @@ it. If an image is used in the #header instead of text, you may want to remove t
     border-bottom: 3px solid #cce0ff;
 	height:600px;
 	padding: 15px 10px 15px 20px;
+	color:white;
 }
 .twoColFixLtHdr #mainContent { 
 	margin: 0 0 10px 250px; /* the left margin on this div element creates the column down the left side of the page - no 

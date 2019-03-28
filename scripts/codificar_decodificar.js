@@ -49,6 +49,7 @@
 	var arregloLetras;
 	var arreglocodigos;
 	var arreglocodificado;
+	var arreglocodificado2;
 	var codigoElt = document.querySelector("#codigo");
 
     
@@ -112,6 +113,7 @@ function decodificacion() {
 	var i;
 	var j; 
 	var caracteres = ' ';
+	var pista ='';
 	console.log(nums.charAt(1));
 	
 
@@ -134,10 +136,27 @@ function decodificacion() {
 	if (estado==-1)
 	{
 	arreglocodificado[i]= String.fromCharCode(129);
+	
+
 	caracteres+= arreglocodificado[i];
 	}
 	} //fin del primer for
 	
 document.getElementById("codigo").value = caracteres;
+
 	
+	
+}
+
+function Getpista(){
+
+	var arreglonumeros2=[];
+	letpista= parseInt(document.getElementById("listad").value);
+	for (i = 0; i<alfabeto.length; i++ ){
+		arreglonumeros2 = (2 * alfabeto[i])-letpista;
+		
+		document.getElementById("pista").innerHTML = arreglonumeros2;
+
+	}
+
 }

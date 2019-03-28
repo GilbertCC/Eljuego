@@ -17,7 +17,10 @@
   <div id="sidebar1">
     
     <p>Elaboró:</p>
-		<p>Esteban Moya // Gilbert Cachaya //Juan Pablo Sotelo </p>
+		<p>Esteban Moya </p> 
+		<p>Gilbert Cachaya</p> 
+		<p>Juan Pablo Sotelo </p>
+		<div id="pista"></div>
     
 					
     </p>
@@ -29,7 +32,7 @@
   <form id="fomrcodificador">
  
     <p>Palabra a codificar : <br> <textarea rows="2" cols="35" id="Palabra" name="Palabra"></textarea> </p>
-    	 <p>Letra Pista:<select id="lista" name="lista">
+    	 <p>Letra Pista:<select id="lista" name="lista" >
     	<option value="1">a</option>
 		  <option value="2">b</option>
 		  <option value="3">c</option>
@@ -72,7 +75,7 @@
     <p>Código : <br> <textarea rows="4" cols="35" id="numerodecod"> 
     </textarea> 
      </p>
-    	 <p>letra Pista:<select id="listad" name="listad">
+    	 <p>letra Pista:<select id="listad" name="listad" onchange="Getpista()">
     	<option value="1">a</option>
 		  <option value="2">b</option>
 		  <option value="3">c</option>
